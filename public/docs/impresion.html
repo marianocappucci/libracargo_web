@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impresión de listados — Documentación LibraCargo</title>
+  <meta name="description" content="Cómo se imprimen los listados y los reportes, con membrete y filtros.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/maestros.html">Maestros</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/comprobantes.html">Comprobantes</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Tablero</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/impresion.html" class="active">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Impresión de listados</h1>
+<p class="docs-lead">Los cuatro listados y cada reporte se imprimen con el membrete de tu empresa y los filtros que aplicaste.</p>
+<h2>Cómo funciona el botón de imprimir</h2>
+<div class="callout">
+<p><strong>No se imprime la pantalla: se pide el listado de nuevo.</strong> La grilla muestra una página de 200 filas, pero quien manda a imprimir un listado filtrado espera <em>el listado</em>, no la página que estaba viendo. El botón repite la búsqueda con los mismos filtros y trae todo.</p>
+</div>
+<h2>Qué sale en el encabezado</h2>
+<ol class="step-list">
+<li>El <strong>membrete</strong>: logo, razón social, CUIT y domicilio (ver <a href="/docs/empresa.html">Datos de la empresa</a>).</li>
+<li>El <strong>título</strong> del listado o del reporte.</li>
+<li><strong>Los filtros aplicados</strong>, escritos.</li>
+</ol>
+<p>Los filtros en el encabezado no son un adorno: dos hojas del mismo listado con filtros distintos tienen que poder distinguirse sin leer las filas.</p>
+<h2>Si no entró todo, lo dice</h2>
+<div class="callout warn">
+<p>La impresión corta en <strong>5.000 filas</strong> y lo escribe en el encabezado cuando eso pasa. Un papel que dice "Órdenes de carga" y trae la mitad, sin avisar, es peor que uno que no se imprimió.</p>
+</div>
+<h2>Varias hojas</h2>
+<p>Los nombres de las columnas se repiten en cada hoja. A partir de la página 2, una tabla sin encabezado son números sin decir de qué.</p>
+<div class="docs-nav-footer">
+<a href="/docs/reportes.html">← Reportes</a>
+<a href="/docs/usuarios.html">Usuarios →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

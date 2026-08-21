@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maestros — Documentación LibraCargo</title>
+  <meta name="description" content="Terceros, choferes, vehículos, localidades, tipos de carga y razones sociales.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/maestros.html" class="active">Maestros</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/comprobantes.html">Comprobantes</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Tablero</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/impresion.html">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Maestros</h1>
+<p class="docs-lead">Los seis catálogos con los que se arma una orden: terceros, choferes, vehículos, localidades, tipos de carga y razones sociales.</p>
+<p>Todos viven en <strong>⚙ Configuración</strong>, en pestañas. La pestaña abierta queda en la dirección del navegador, así que podés mandarle a alguien el link directo de <em>"cargá los vehículos acá"</em>.</p>
+<h2>Terceros</h2>
+<p>Un tercero es una persona o empresa con la que operás, y lleva <strong>uno o más roles</strong>:</p>
+<table class="docs-table">
+<thead><tr><th>Rol</th><th>Qué significa</th></tr></thead>
+<tbody>
+<tr><td><kbd>cliente</kbd></td><td>Te da la carga y te paga</td></tr>
+<tr><td><kbd>fletero</kbd></td><td>Hace el viaje y le pagás</td></tr>
+<tr><td><kbd>proveedor</kbd></td><td>Te vende algo (combustible, servicios, repuestos)</td></tr>
+</tbody>
+</table>
+<div class="callout">
+<p><strong>Un mismo tercero puede ser cliente y fletero a la vez</strong>, y son dos cuentas corrientes distintas. Por eso todo movimiento de cuenta corriente pide <strong>tercero y rol</strong>: sin el rol el sistema tendría que adivinar cuál de sus dos cuentas mover, y prefiere rechazarlo.</p>
+</div>
+<p>Un tercero tiene que tener <strong>al menos un rol</strong>. Si no, no se guarda.</p>
+<h2>Localidades</h2>
+<p>El catálogo de <strong>provincias y localidades de Argentina viene precargado</strong>. En la orden se eligen de una lista con buscador, no se tipean: es lo que evita que la misma ciudad entre escrita de cuatro maneras distintas y después ningún listado por destino cierre.</p>
+<h2>Choferes y vehículos</h2>
+<p>Choferes con sus datos, y vehículos con su patente. La patente es <strong>única</strong>: no se puede cargar el mismo vehículo dos veces.</p>
+<h2>Tipos de carga</h2>
+<p>Con qué se mide lo que llevás (bultos, pallets, toneladas, metros cúbicos: lo que uses).</p>
+<h2>Razones sociales</h2>
+<p>Las razones sociales <strong>propias</strong> con las que facturás la misma actividad. Cada orden se factura con una, y los <a href="/docs/comprobantes.html">comprobantes</a> se agrupan por razón social — una factura no puede mezclar órdenes de dos.</p>
+<h2>Dar de baja, no borrar</h2>
+<p>Los maestros se dan de <strong>baja</strong>: dejan de aparecer en los desplegables de una orden nueva, pero las órdenes viejas que los usan siguen mostrándolos. Se pueden reactivar. Borrar un fletero que hizo doscientos viajes dejaría doscientas órdenes sin poder decir quién las hizo.</p>
+<div class="docs-nav-footer">
+<a href="/docs/empresa.html">← Datos de la empresa</a>
+<a href="/docs/ordenes.html">Órdenes de carga →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

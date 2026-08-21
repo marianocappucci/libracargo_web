@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprobantes — Documentación LibraCargo</title>
+  <meta name="description" content="Facturar órdenes pendientes por razón social, y anular sin borrar.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/maestros.html">Maestros</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/comprobantes.html" class="active">Comprobantes</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Tablero</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/impresion.html">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Comprobantes</h1>
+<p class="docs-lead">Agrupar las órdenes pendientes de un cliente en una factura, por razón social.</p>
+<h2>Facturar órdenes pendientes</h2>
+<ol class="step-list">
+<li>Andá a <strong>Comprobantes</strong> → <strong>Facturar pendientes</strong>.</li>
+<li>Elegí el <strong>cliente</strong> y la <strong>razón social</strong> con la que vas a facturar.</li>
+<li>El sistema te ofrece las órdenes pendientes <strong>de esa razón social</strong>. Tildá las que entran.</li>
+<li>Cargá el <strong>tipo y el número</strong> del comprobante.</li>
+<li>Confirmá.</li>
+</ol>
+<div class="callout">
+<p><strong>Los importes salen de las órdenes, no se tipean.</strong> Un total escrito a mano podría decir un número distinto del de las órdenes que agrupa, y esa diferencia después no se puede explicar.</p>
+</div>
+<h2>El IVA se suma por orden</h2>
+<p>El IVA del comprobante es la <strong>suma de los IVA de cada orden</strong>, no el IVA del neto total. Con dos órdenes de $10,03 la primera cuenta da $4,22 y la segunda $4,21. Además, así una misma factura admite órdenes con alícuotas distintas.</p>
+<h2>Qué pasa al confirmar</h2>
+<p>En un solo acto: se crea el comprobante, las órdenes pasan de <kbd>pendiente</kbd> a <kbd>facturada</kbd>, y se asienta el movimiento en la cuenta corriente del cliente. Las tres cosas juntas, o ninguna.</p>
+<h2>Anular un comprobante</h2>
+<table class="docs-table">
+<thead><tr><th>Qué pasa</th><th>Detalle</th></tr></thead>
+<tbody>
+<tr><td>El comprobante <strong>no se borra</strong></td><td>Queda marcado como anulado</td></tr>
+<tr><td>Las órdenes vuelven a <kbd>pendiente</kbd></td><td>Se pueden volver a facturar</td></tr>
+<tr><td>La cuenta corriente se revierte</td><td>Con un asiento <strong>nuevo</strong>, no borrando el anterior</td></tr>
+<tr><td>La reversión lleva la fecha <strong>del comprobante</strong></td><td>No la de hoy</td></tr>
+</tbody>
+</table>
+<div class="callout">
+<p><strong>Por qué la reversión lleva la fecha del comprobante:</strong> con la fecha de hoy, la cuenta corriente mostraría entre la factura y su anulación una deuda que los totales del período ya no reconocen. Con la fecha original, un comprobante anulado queda fuera de los totales en cualquier rango que se consulte.</p>
+</div>
+<h2>Los totales por razón social</h2>
+<p>La pantalla muestra, por razón social, <strong>lo que suman los comprobantes y lo que suman las órdenes que agrupan</strong>, y avisa en rojo cuando no coinciden. Es el mismo criterio de la <a href="/docs/cuenta-corriente.html">cuenta corriente</a>: un número que sale de dos lugares distintos y da igual, es un número en el que se puede confiar.</p>
+<div class="callout warn">
+<p><strong>El comprobante se registra, no se emite.</strong> El número lo tipea una persona: LibraCargo todavía no pide el CAE a ARCA. La emisión electrónica está planificada como una etapa propia.</p>
+</div>
+<div class="docs-nav-footer">
+<a href="/docs/caja.html">← Caja</a>
+<a href="/docs/tablero.html">Tablero →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

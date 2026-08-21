@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backup y restauración — Documentación LibraCargo</title>
+  <meta name="description" content="Bajarte una copia completa de tu base de datos, y poder reponerla.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/maestros.html">Maestros</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/comprobantes.html">Comprobantes</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Tablero</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/impresion.html">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html" class="active">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Backup y restauración</h1>
+<p class="docs-lead">Bajarte una copia completa de tu base de datos, y poder reponerla.</p>
+<h2>Bajar un backup</h2>
+<ol class="step-list">
+<li>Andá a <strong>⚙ Configuración → Datos / Backup</strong> (sólo administradores).</li>
+<li>Tocá <strong>Generar backup</strong>.</li>
+<li>Se descarga un <strong>ZIP</strong> con la base entera.</li>
+</ol>
+<div class="callout">
+<p><strong>El backup es toda tu instancia:</strong> órdenes, terceros, cuentas corrientes, movimientos de caja, comprobantes, usuarios, el log de actividad y los datos de tu empresa, incluido el logo. No hay nada tuyo que viva fuera de la base.</p>
+</div>
+<h2>Restaurar</h2>
+<ol class="step-list">
+<li>En la misma pantalla, elegí el archivo de backup.</li>
+<li>Confirmá.</li>
+</ol>
+<div class="callout warn">
+<p><strong>Restaurar reemplaza todo lo que hay hoy</strong> por el contenido del archivo. Lo cargado desde que se tomó ese backup se pierde. Antes de reponer una copia vieja, bajate una del estado actual.</p>
+</div>
+<h2>Con qué frecuencia</h2>
+<p>La instancia se respalda también del lado del servidor, sin que tengas que hacer nada. La copia que te bajás desde acá es <strong>tuya</strong> y sirve para lo que la del servidor no: llevarte tus datos, dárselos a tu contador, o quedarte tranquilo antes de una carga masiva.</p>
+<div class="docs-nav-footer">
+<a href="/docs/logs.html">← Log de actividad</a>
+<span></span>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

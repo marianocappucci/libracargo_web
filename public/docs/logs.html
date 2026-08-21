@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log de actividad — Documentación LibraCargo</title>
+  <meta name="description" content="Quién hizo qué, cuándo y qué cambió.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/maestros.html">Maestros</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/comprobantes.html">Comprobantes</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Tablero</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/impresion.html">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html" class="active">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Log de actividad</h1>
+<p class="docs-lead">Quién hizo qué, cuándo, y qué cambió. Disponible en el plan Premium.</p>
+<h2>Qué registra</h2>
+<p>Cada alta, edición y baja del sistema deja un asiento con el usuario, la fecha y hora, la entidad tocada, la acción, y <strong>los datos antes y después del cambio</strong>. Contesta la pregunta que ningún listado contesta: <em>"¿quién le cambió la tarifa a esta orden?"</em>.</p>
+<h2>Cómo se consulta</h2>
+<p>Andá a <strong>Administración → Log de actividad</strong> (sólo administradores). Se filtra por:</p>
+<ol class="step-list">
+<li><strong>Entidad</strong> — órdenes, terceros, comprobantes, movimientos de caja…</li>
+<li><strong>Usuario</strong>.</li>
+<li><strong>Acción</strong> — alta, edición, baja.</li>
+<li><strong>Rango de fechas</strong>.</li>
+</ol>
+<p>El listado dice siempre <strong>cuántos registros hay en total</strong>, no sólo los de la página: un listado que no dice cuánto hay se lee como si fuera todo.</p>
+<h2>El log no se edita</h2>
+<div class="callout warn">
+<p><strong>No hay forma de borrar ni corregir un asiento</strong>, ni siquiera siendo administrador, y tampoco de cargar uno a mano. Un log que se puede corregir no sirve para lo que existe. Los asientos los escribe el sistema, en la misma operación que el cambio que registran.</p>
+</div>
+<div class="callout">
+<p><strong>Si tu instancia vino de una migración</strong>, el log arranca con los registros del sistema anterior. Esos traen quién y cuándo, pero no qué cambió: el sistema viejo nunca lo guardó. Los asientos nuevos sí.</p>
+</div>
+<div class="docs-nav-footer">
+<a href="/docs/usuarios.html">← Usuarios</a>
+<a href="/docs/backup.html">Backup y restauración →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+services:
+  web:
+    build: .
+    image: libracargo-web:latest
+    container_name: libracargo-web
+    restart: unless-stopped
+    environment:
+      - AUTH_UPSTREAM=libracargo-web-auth
+    ports:
+      - "8100:80"
+    networks:
+      - stack-net
+    depends_on:
+      - auth
+
+  auth:
+    build:
+      context: ./auth
+      ssh:
+        - default=${LIBRA_WEB_KIT_SSH_KEY:-~/.ssh/id_ed25519_libra_web_kit}
+    image: libracargo-web-auth:latest
+    container_name: libracargo-web-auth
+    restart: unless-stopped
+    environment:
+      - DOCS_AUTH_SECRET=${DOCS_AUTH_SECRET:-}
+      - DOCS_SESSION_SECRET=${DOCS_SESSION_SECRET:-libracargo-docs-secret-change-me}
+      - APEX_DOMAIN=${APEX_DOMAIN:-libracargo.com.ar}
+    networks:
+      - stack-net
+
+networks:
+  stack-net:
+    external: true
+    name: stack_stack-net

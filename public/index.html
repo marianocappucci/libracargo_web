@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibraCargo — El sistema de tu agencia de cargas</title>
+  <meta name="description" content="Órdenes de carga, fleteros, las tres cuentas corrientes, caja, comprobantes y reportes. El sistema para agencias de cargas que intermedian entre el cliente y el transportista.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- ── Navbar ─────────────────────────────────────────────── -->
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none">
+    <div class="logo-icon">C</div>
+    LibraCargo
+  </a>
+  <div class="navbar-links">
+    <a href="#funciones">Funciones</a>
+    <a href="#planes">Planes</a>
+    <a href="/docs/">Documentación</a>
+    <!-- demo-publica --><a href="https://demo.libracargo.com.ar/" target="_blank" rel="noopener">Ver la demo</a>
+    <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraCargo" target="_blank" class="btn-nav">Contactar</a>
+  </div>
+</nav>
+
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Sistema para agencias de cargas</div>
+    <h1>Tu agencia, ordenada.<br><span>Órdenes, fleteros y cuentas en un solo lugar.</span></h1>
+    <p>Una agencia de cargas no transporta: intermedia. LibraCargo sigue la orden desde que la toma el cliente hasta que se factura, con las tres cuentas corrientes que eso mueve —cliente, fletero y proveedor— y la comisión como dato de primera clase.</p>
+    <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraCargo" target="_blank" class="btn btn-primary btn-lg">
+      <i class="bi bi-whatsapp"></i> Contactar por WhatsApp
+    </a>
+    <!-- demo-publica --><a href="https://demo.libracargo.com.ar/" target="_blank" rel="noopener" class="btn btn-white btn-lg">
+      <i class="bi bi-play-circle"></i> Ver la demo
+    </a>
+  </div>
+</section>
+
+<!-- ── Funciones ──────────────────────────────────────────── -->
+<section id="funciones">
+  <div class="container">
+    <div class="section-label">Módulos disponibles</div>
+    <h2 class="section-title">Todo el circuito de la agencia</h2>
+    <p class="section-sub">De la orden al comprobante, sin planillas paralelas ni cuentas que hay que rehacer a mano.</p>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-clipboard-check" style="color:#012c83"></i>
+        </div>
+        <h3>Órdenes de carga <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Cliente, remito, origen y destino, tipo y cantidad, fletero, chofer y vehículo. El IVA y el total los calcula el sistema: no son campos que se tipean.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-funnel" style="color:#012c83"></i>
+        </div>
+        <h3>Un listado, doce filtros <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Por cliente, por fletero, por fecha, por ruta, por remito, las pendientes de facturar. Se combinan entre sí en una sola pantalla.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-journal-bookmark" style="color:#012c83"></i>
+        </div>
+        <h3>Las tres cuentas corrientes <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Cliente, fletero y proveedor, cada una con su saldo. Un mismo tercero puede ser cliente y fletero: son dos cuentas distintas y se mueven en direcciones opuestas.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-shield-check" style="color:#012c83"></i>
+        </div>
+        <h3>El saldo, calculado dos veces <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Cada cuenta muestra dos saldos calculados por caminos distintos, y avisa en rojo si no coinciden. Un número que sale de dos lados y da igual es un número en el que se puede confiar.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-cash-stack" style="color:#012c83"></i>
+        </div>
+        <h3>Caja <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Cobros, pagos y gastos por medio de pago. Todo movimiento con tercero deja su contrapartida en la cuenta corriente, en el mismo acto.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-receipt-cutoff" style="color:#012c83"></i>
+        </div>
+        <h3>Comprobantes por razón social <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Agrupá las órdenes pendientes de un cliente en una factura. Los importes salen de las órdenes, y anular no borra: revierte con un asiento nuevo.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-people" style="color:#012c83"></i>
+        </div>
+        <h3>Seis maestros <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Terceros, choferes, vehículos, localidades, tipos de carga y razones sociales. Las localidades salen de un catálogo de todo el país: no se tipean.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-printer" style="color:#012c83"></i>
+        </div>
+        <h3>La orden de carga en papel <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>El documento que viaja con el camión: tu membrete y tu logo, los importes con el IVA discriminado, las dos firmas y tu pie configurable.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-speedometer2" style="color:#012c83"></i>
+        </div>
+        <h3>Tablero <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Órdenes y facturado del mes, cobrado, pagado, pendientes y los tres saldos. Cada número dice de qué período es.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#dbeafe">
+          <i class="bi bi-bar-chart-line" style="color:#1e40af"></i>
+        </div>
+        <h3>Ocho reportes <span class="feature-badge badge-estandar">Estándar</span></h3>
+        <p>Resumen del período, ranking de clientes y de fleteros, pendientes de facturar, los tres saldos de una vez, caja, facturado por razón social y rutas más transitadas.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#f3e8ff">
+          <i class="bi bi-clock-history" style="color:#7e22ce"></i>
+        </div>
+        <h3>Log de actividad <span class="feature-badge badge-premium">Premium</span></h3>
+        <p>Quién hizo qué, cuándo, y qué cambió — con los datos de antes y después. No se puede editar ni borrar, ni siendo administrador.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#f8fafc">
+          <i class="bi bi-database-lock" style="color:#475569"></i>
+        </div>
+        <h3>Base de datos propia <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Cada agencia tiene su instancia y su base aislada, y se baja el backup completo cuando quiere.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Para quién ─────────────────────────────────────────── -->
+<section class="alt">
+  <div class="container" style="text-align:center">
+    <div class="section-label">Para quién es</div>
+    <h2 class="section-title">Para el que toma la carga y la manda a hacer</h2>
+    <p class="section-sub" style="margin:0 auto">Si tu negocio es conseguir el flete, asignárselo a un tercero y vivir de la diferencia, este sistema está hecho para eso.</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem">
+      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-truck" style="color:var(--brand);margin-right:.4rem"></i>Agencias de cargas</span>
+      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-box-seam" style="color:var(--brand);margin-right:.4rem"></i>Operadores logísticos</span>
+      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-signpost-split" style="color:var(--brand);margin-right:.4rem"></i>Fleteros con red de terceros</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Cómo funciona ──────────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">Así de simple</div>
+    <h2 class="section-title">De la orden al comprobante</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Cargás la orden</h3>
+        <p>Cliente, origen, destino, tipo de carga, fletero, chofer y vehículo. La tarifa y la comisión, y el sistema calcula el resto.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Cobrás y pagás</h3>
+        <p>Desde caja. Cada movimiento deja su asiento en la cuenta corriente que corresponde, sin que haya que anotarlo dos veces.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Facturás lo pendiente</h3>
+        <p>Elegís el cliente y la razón social, tildás las órdenes y sale el comprobante con los importes que ya tenían las órdenes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Migración ──────────────────────────────────────────── -->
+<section class="alt">
+  <div class="container" style="text-align:center">
+    <div class="section-label">¿Ya tenés un sistema?</div>
+    <h2 class="section-title">Tus datos se traen</h2>
+    <p class="section-sub" style="margin:0 auto 1.5rem">LibraCargo nació migrando una agencia real con años de historia: órdenes, terceros, cuentas corrientes y movimientos de caja. La migración se hace contra una copia de lectura del sistema viejo —que sigue funcionando mientras tanto— y termina con un reporte de diferencias que vos validás antes de cortar.</p>
+    <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20consultar%20por%20migrar%20mi%20sistema%20a%20LibraCargo" target="_blank" class="btn btn-outline">
+      <i class="bi bi-arrow-left-right"></i> Consultar por una migración
+    </a>
+  </div>
+</section>
+
+<!-- ── Planes ─────────────────────────────────────────────── -->
+<section id="planes">
+  <div class="container">
+    <div class="section-label">Planes</div>
+    <h2 class="section-title">El núcleo, siempre completo</h2>
+    <p class="section-sub">Órdenes, maestros, cuentas corrientes, caja y comprobantes no se limitan por plan. Lo que cambia es lo que se agrega arriba.</p>
+
+    <div class="pricing-grid">
+
+      <!-- Básico -->
+      <div class="plan-card">
+        <div class="plan-name">Básico</div>
+        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <p class="plan-desc">Toda la operación de la agencia, de punta a punta.</p>
+        <ul class="plan-features">
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Órdenes de carga con doce filtros</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Las tres cuentas corrientes</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Caja con contrapartida automática</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Comprobantes por razón social</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Los seis maestros</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Orden de carga en papel y tablero</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Usuarios ilimitados</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Backup y restore de la base</li>
+          <li class="muted"><i class="bi bi-x-circle icon-x"></i> Reportes e impresión de listados</li>
+          <li class="muted"><i class="bi bi-x-circle icon-x"></i> Log de actividad</li>
+        </ul>
+        <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20consultar%20el%20precio%20del%20plan%20B%C3%A1sico%20de%20LibraCargo"
+           target="_blank" class="btn btn-outline plan-cta">Consultar precio</a>
+      </div>
+
+      <!-- Estándar -->
+      <div class="plan-card featured">
+        <div class="plan-featured-tag">Más elegido</div>
+        <div class="plan-name">Estándar</div>
+        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <p class="plan-desc">Para la agencia que además necesita mirar los números del período.</p>
+        <ul class="plan-features">
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Básico</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Los ocho reportes con sus parámetros</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Impresión de listados con membrete y filtros</li>
+        </ul>
+        <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20consultar%20el%20precio%20del%20plan%20Est%C3%A1ndar%20de%20LibraCargo"
+           target="_blank" class="btn btn-primary plan-cta">Consultar precio</a>
+      </div>
+
+      <!-- Premium -->
+      <div class="plan-card">
+        <div class="plan-name">Premium</div>
+        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <p class="plan-desc">Para cuando hace falta poder responder quién tocó qué.</p>
+        <ul class="plan-features">
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Estándar</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Log de actividad con datos antes/después</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Soporte prioritario</li>
+        </ul>
+        <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20consultar%20el%20precio%20del%20plan%20Premium%20de%20LibraCargo"
+           target="_blank" class="btn btn-outline plan-cta">Consultar precio</a>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;color:var(--muted);margin-top:1.5rem;font-size:.8rem;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.6">
+      Escribinos y te pasamos el precio según el tamaño de tu operación. Órdenes, maestros, cuentas corrientes, caja y comprobantes nunca se limitan por plan.
+    </p>
+  </div>
+</section>
+
+<!-- ── CTA final ──────────────────────────────────────────── -->
+<section class="cta-section">
+  <h2>¿Listo para dejar la planilla?</h2>
+  <p>Probá la demo o escribinos. Sin contratos, sin instalaciones, sin complicaciones.</p>
+  <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraCargo"
+     target="_blank" class="btn btn-white btn-lg">
+    <i class="bi bi-whatsapp"></i> Contactar por WhatsApp
+  </a>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <div class="logo-icon" style="width:28px;height:28px;border-radius:6px;background:var(--brand);display:inline-flex;align-items:center;justify-content:center;color:white;font-weight:900;font-size:.8rem">C</div>
+        LibraCargo
+      </div>
+      <div class="footer-tagline">El sistema de tu agencia de cargas</div>
+    </div>
+    <div style="display:flex;gap:3rem;flex-wrap:wrap">
+      <div>
+        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Sistema</div>
+        <div style="display:flex;flex-direction:column;gap:.4rem">
+          <a href="#funciones" style="color:#94a3b8;font-size:.9rem">Funciones</a>
+          <a href="#planes" style="color:#94a3b8;font-size:.9rem">Planes</a>
+          <a href="/docs/" style="color:#94a3b8;font-size:.9rem">Documentación</a>
+          <!-- demo-publica --><a href="https://demo.libracargo.com.ar/" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Ver la demo</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Contacto</div>
+        <div style="display:flex;flex-direction:column;gap:.4rem">
+          <a href="https://wa.me/5491127752983" target="_blank" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
+          <a href="mailto:soporte@libracargo.com.ar" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-envelope me-1"></i>Email</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Familia Libra</div>
+        <div style="display:flex;flex-direction:column;gap:.4rem">
+          <a href="https://contalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Contalibra — ERP &amp; Facturación</a>
+          <a href="https://libradesk.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">LibraDesk — Soporte técnico</a>
+          <a href="https://ventalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">VentaLibra — Punto de venta</a>
+          <a href="https://libraclub.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">LibraClub — Complejos deportivos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2026 LibraCargo · parte de la familia Libra · Todos los derechos reservados
+  </div>
+</footer>
+
+</body>
+</html>
