@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LibraCargo — El sistema de tu agencia de cargas</title>
-  <meta name="description" content="Órdenes de carga, fleteros, las tres cuentas corrientes, caja, comprobantes y reportes. El sistema para agencias de cargas que intermedian entre el cliente y el transportista.">
+  <meta name="description" content="Órdenes de carga, cartas de porte por CTG o por delegación, fleteros, las tres cuentas corrientes, caja, comprobantes y reportes. El sistema para agencias de cargas que intermedian entre el cliente y el transportista.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -49,7 +49,7 @@
   <div class="highlight"><i class="bi bi-journal-bookmark"></i><div><strong>Tres cuentas corrientes</strong><span>Cliente, fletero y proveedor</span></div></div>
   <div class="highlight"><i class="bi bi-shield-check"></i><div><strong>Saldo confiable</strong><span>Calculado dos veces</span></div></div>
   <div class="highlight"><i class="bi bi-clipboard-check"></i><div><strong>De la orden al comprobante</strong><span>Sin planillas paralelas</span></div></div>
-  <div class="highlight"><i class="bi bi-patch-check"></i><div><strong>Certificados ARCA</strong><span>Validados al subirlos</span></div></div>
+  <div class="highlight"><i class="bi bi-truck"></i><div><strong>Carta de porte</strong><span>Por CTG o por delegación</span></div></div>
 </div>
 
 <!-- ── Funciones ──────────────────────────────────────────── -->
@@ -67,6 +67,22 @@
         </div>
         <h3>Órdenes de carga <span class="feature-badge badge-incluido">Incluido</span></h3>
         <p>Cliente, remito, origen y destino, tipo y cantidad, fletero, chofer y vehículo. El IVA y el total los calcula el sistema: no son campos que se tipean.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-upc-scan" style="color:#012c83"></i>
+        </div>
+        <h3>Carta de porte por CTG <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Cargás el CTG y el sistema trae de ARCA los datos de la carta de porte: chofer, origen, destino, kilos y estado. Podés pegar varios CTG a la vez y actualizarlos hasta que ARCA informe la descarga.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e0e7ff">
+          <i class="bi bi-person-check" style="color:#012c83"></i>
+        </div>
+        <h3>Emisión por delegación <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Si un titular te delegó la emisión en ARCA, generás la carta de porte a su nombre desde la orden de carga, sin otro programa. Queda guardada con su CTG y su estado.</p>
       </div>
 
       <div class="feature-card">
@@ -290,6 +306,7 @@
         <p class="plan-desc">Toda la operación de la agencia, de punta a punta.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Órdenes de carga con doce filtros</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Cartas de porte por CTG y por delegación</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Las tres cuentas corrientes</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Caja con contrapartida automática</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Comprobantes por razón social</li>
@@ -352,6 +369,10 @@
         <p>No. Sin contratos y sin instalaciones: cada agencia tiene su propia instancia.</p>
       </details>
       <details class="faq-item">
+        <summary>¿Puedo generar cartas de porte?</summary>
+        <p>Sí. Si un titular te delegó la emisión en ARCA, la generás a su nombre desde la orden de carga. Y para las cartas que emite otro, cargás el CTG y el sistema trae de ARCA los datos: chofer, origen, destino, kilos y estado, y los actualiza hasta la descarga.</p>
+      </details>
+      <details class="faq-item">
         <summary>¿Cuánto cuesta?</summary>
         <p>El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Órdenes, maestros, cuentas corrientes, caja y comprobantes nunca se limitan por plan.</p>
       </details>
@@ -376,7 +397,7 @@
   </div>
 </section>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que instalar algo?", "acceptedAnswer": {"@type": "Answer", "text": "No. Sin contratos y sin instalaciones: cada agencia tiene su propia instancia."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Órdenes, maestros, cuentas corrientes, caja y comprobantes nunca se limitan por plan."}}, {"@type": "Question", "name": "¿Qué pasa con los datos de mi agencia?", "acceptedAnswer": {"@type": "Answer", "text": "Cada agencia tiene su instancia y su base de datos aislada, y podés bajar el backup completo cuando quieras."}}, {"@type": "Question", "name": "¿Puedo traer los datos de mi sistema actual?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La migración trae órdenes, terceros, cuentas corrientes y movimientos de caja, y se hace contra una copia de lectura del sistema viejo, que sigue funcionando mientras tanto. Termina con un reporte de diferencias que validás antes de cortar."}}, {"@type": "Question", "name": "¿Cuántos usuarios puedo tener?", "acceptedAnswer": {"@type": "Answer", "text": "Todos los que necesites: los usuarios son ilimitados."}}, {"@type": "Question", "name": "¿Puedo probarlo antes de contratar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Hay una demo pública: entrá desde «Ver la demo» o escribinos y la recorrés a tu ritmo."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que instalar algo?", "acceptedAnswer": {"@type": "Answer", "text": "No. Sin contratos y sin instalaciones: cada agencia tiene su propia instancia."}}, {"@type": "Question", "name": "¿Puedo generar cartas de porte?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Si un titular te delegó la emisión en ARCA, la generás a su nombre desde la orden de carga. Y para las cartas que emite otro, cargás el CTG y el sistema trae de ARCA los datos: chofer, origen, destino, kilos y estado, y los actualiza hasta la descarga."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Órdenes, maestros, cuentas corrientes, caja y comprobantes nunca se limitan por plan."}}, {"@type": "Question", "name": "¿Qué pasa con los datos de mi agencia?", "acceptedAnswer": {"@type": "Answer", "text": "Cada agencia tiene su instancia y su base de datos aislada, y podés bajar el backup completo cuando quieras."}}, {"@type": "Question", "name": "¿Puedo traer los datos de mi sistema actual?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La migración trae órdenes, terceros, cuentas corrientes y movimientos de caja, y se hace contra una copia de lectura del sistema viejo, que sigue funcionando mientras tanto. Termina con un reporte de diferencias que validás antes de cortar."}}, {"@type": "Question", "name": "¿Cuántos usuarios puedo tener?", "acceptedAnswer": {"@type": "Answer", "text": "Todos los que necesites: los usuarios son ilimitados."}}, {"@type": "Question", "name": "¿Puedo probarlo antes de contratar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Hay una demo pública: entrá desde «Ver la demo» o escribinos y la recorrés a tu ritmo."}}]}</script>
 
 <!-- ── CTA final ──────────────────────────────────────────── -->
 <section class="cta-section">
