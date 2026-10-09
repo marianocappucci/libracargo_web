@@ -22,6 +22,7 @@
   <div class="navbar-links">
     <a href="#funciones">Funciones</a>
     <a href="#planes">Planes</a>
+    <a href="#preguntas">Preguntas</a>
     <a href="/docs/">Documentación</a>
     <!-- demo-publica --><a href="https://demo.libracargo.com.ar/" target="_blank" rel="noopener">Ver la demo</a>
     <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraCargo" target="_blank" class="btn-nav">Contactar</a>
@@ -42,6 +43,14 @@
     </a>
   </div>
 </section>
+
+<!-- ── Puntos fuertes ─────────────────────────────────────── -->
+<div class="highlights">
+  <div class="highlight"><i class="bi bi-journal-bookmark"></i><div><strong>Tres cuentas corrientes</strong><span>Cliente, fletero y proveedor</span></div></div>
+  <div class="highlight"><i class="bi bi-shield-check"></i><div><strong>Saldo confiable</strong><span>Calculado dos veces</span></div></div>
+  <div class="highlight"><i class="bi bi-clipboard-check"></i><div><strong>De la orden al comprobante</strong><span>Sin planillas paralelas</span></div></div>
+  <div class="highlight"><i class="bi bi-patch-check"></i><div><strong>Certificados ARCA</strong><span>Validados al subirlos</span></div></div>
+</div>
 
 <!-- ── Funciones ──────────────────────────────────────────── -->
 <section id="funciones">
@@ -160,16 +169,70 @@
   </div>
 </section>
 
+<!-- ── Capturas de la demo ────────────────────────────────── -->
+<section class="showcase">
+  <div class="container">
+    <div class="section-label">Así se ve</div>
+    <h2 class="section-title">Las órdenes y las cuentas, a la vista</h2>
+    <p class="section-sub">El tablero de la agencia y el listado de órdenes de carga. Capturas reales de la demo, con datos de prueba.</p>
+    <div class="showcase-grid">
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libracargo.com.ar/</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-tablero.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Tablero de LibraCargo: órdenes del mes, facturado, cobrado, pendientes de facturar, saldos de clientes, fleteros y proveedores, comisión del mes y últimas órdenes">
+          </div>
+        </div>
+        <figcaption>El tablero: saldos de las tres cuentas y la comisión del mes.</figcaption>
+      </figure>
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libracargo.com.ar/ordenes</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-ordenes.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Órdenes de carga de LibraCargo: fecha, cliente, tramo, fletero, remito, total y estado de cada orden, con filtros">
+          </div>
+        </div>
+        <figcaption>Las órdenes: cliente, tramo, fletero y estado de cada viaje.</figcaption>
+      </figure>
+    </div>
+    <div class="showcase-cta">
+      <!-- demo-publica --><a href="https://demo.libracargo.com.ar/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle"></i> Probar la demo
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ── Para quién ─────────────────────────────────────────── -->
 <section class="alt">
-  <div class="container" style="text-align:center">
+  <div class="container">
     <div class="section-label">Para quién es</div>
     <h2 class="section-title">Para el que toma la carga y la manda a hacer</h2>
-    <p class="section-sub" style="margin:0 auto">Si tu negocio es conseguir el flete, asignárselo a un tercero y vivir de la diferencia, este sistema está hecho para eso.</p>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem">
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-truck" style="color:var(--brand);margin-right:.4rem"></i>Agencias de cargas</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-box-seam" style="color:var(--brand);margin-right:.4rem"></i>Operadores logísticos</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-signpost-split" style="color:var(--brand);margin-right:.4rem"></i>Fleteros con red de terceros</span>
+    <p class="section-sub">Si tu negocio es conseguir el flete, asignárselo a un tercero y vivir de la diferencia, este sistema está hecho para eso.</p>
+    <div class="rubros">
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-truck"></i></div>
+        <h3>Agencias de cargas</h3>
+        <p>Órdenes, cuentas corrientes y comprobantes para una operación que intermedia entre el cliente y el transportista.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-box-seam"></i></div>
+        <h3>Operadores logísticos</h3>
+        <p>La carga se toma, se asigna a un tercero y la comisión queda registrada como dato de primera clase.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-signpost-split"></i></div>
+        <h3>Fleteros con red de terceros</h3>
+        <p>Un mismo tercero puede ser cliente y fletero: son dos cuentas distintas, cada una con su saldo.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -223,7 +286,7 @@
       <!-- Básico -->
       <div class="plan-card">
         <div class="plan-name">Básico</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Toda la operación de la agencia, de punta a punta.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Órdenes de carga con doce filtros</li>
@@ -245,7 +308,7 @@
       <div class="plan-card featured">
         <div class="plan-featured-tag">Más elegido</div>
         <div class="plan-name">Estándar</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Para la agencia que además necesita mirar los números del período.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Básico</li>
@@ -259,7 +322,7 @@
       <!-- Premium -->
       <div class="plan-card">
         <div class="plan-name">Premium</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Para cuando hace falta poder responder quién tocó qué.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Estándar</li>
@@ -278,6 +341,43 @@
   </div>
 </section>
 
+<!-- ── Preguntas frecuentes ───────────────────────────────── -->
+<section id="preguntas" class="faq">
+  <div class="container faq-container">
+    <div class="section-label">Preguntas frecuentes</div>
+    <h2 class="section-title">Lo que más nos preguntan</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Tengo que instalar algo?</summary>
+        <p>No. Sin contratos y sin instalaciones: cada agencia tiene su propia instancia.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto cuesta?</summary>
+        <p>El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Órdenes, maestros, cuentas corrientes, caja y comprobantes nunca se limitan por plan.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa con los datos de mi agencia?</summary>
+        <p>Cada agencia tiene su instancia y su base de datos aislada, y podés bajar el backup completo cuando quieras.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo traer los datos de mi sistema actual?</summary>
+        <p>Sí. La migración trae órdenes, terceros, cuentas corrientes y movimientos de caja, y se hace contra una copia de lectura del sistema viejo, que sigue funcionando mientras tanto. Termina con un reporte de diferencias que validás antes de cortar.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuántos usuarios puedo tener?</summary>
+        <p>Todos los que necesites: los usuarios son ilimitados.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo probarlo antes de contratar?</summary>
+        <p>Sí. Hay una demo pública: entrá desde «Ver la demo» o escribinos y la recorrés a tu ritmo.</p>
+      </details>
+    </div>
+    <p class="faq-more">¿Te quedó otra duda? <a href="https://wa.me/5491127752983?text=Hola,%20tengo%20una%20consulta%20sobre%20LibraCargo" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.</p>
+  </div>
+</section>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que instalar algo?", "acceptedAnswer": {"@type": "Answer", "text": "No. Sin contratos y sin instalaciones: cada agencia tiene su propia instancia."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Órdenes, maestros, cuentas corrientes, caja y comprobantes nunca se limitan por plan."}}, {"@type": "Question", "name": "¿Qué pasa con los datos de mi agencia?", "acceptedAnswer": {"@type": "Answer", "text": "Cada agencia tiene su instancia y su base de datos aislada, y podés bajar el backup completo cuando quieras."}}, {"@type": "Question", "name": "¿Puedo traer los datos de mi sistema actual?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La migración trae órdenes, terceros, cuentas corrientes y movimientos de caja, y se hace contra una copia de lectura del sistema viejo, que sigue funcionando mientras tanto. Termina con un reporte de diferencias que validás antes de cortar."}}, {"@type": "Question", "name": "¿Cuántos usuarios puedo tener?", "acceptedAnswer": {"@type": "Answer", "text": "Todos los que necesites: los usuarios son ilimitados."}}, {"@type": "Question", "name": "¿Puedo probarlo antes de contratar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Hay una demo pública: entrá desde «Ver la demo» o escribinos y la recorrés a tu ritmo."}}]}</script>
+
 <!-- ── CTA final ──────────────────────────────────────────── -->
 <section class="cta-section">
   <h2>¿Listo para dejar la planilla?</h2>
@@ -289,45 +389,46 @@
 </section>
 
 <!-- ── Footer ─────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div>
+<footer class="site-footer">
+  <div class="f-inner">
+    <div class="f-about">
       <div class="footer-brand">
-        <img src="/img/marca.svg" alt="" class="logo-icon" width="28" height="28">
+        <img src="/img/marca.svg" alt="" class="logo-icon f-logo" width="28" height="28">
         LibraCargo
       </div>
-      <div class="footer-tagline">El sistema de tu agencia de cargas</div>
+      <p class="f-tagline">Órdenes, fleteros, cuentas corrientes y comisión para agencias de cargas.</p>
+      <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraCargo" target="_blank" rel="noopener" class="f-cta">
+        <i class="bi bi-whatsapp"></i> Escribinos por WhatsApp
+      </a>
     </div>
-    <div style="display:flex;gap:3rem;flex-wrap:wrap">
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Sistema</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="#funciones" style="color:#94a3b8;font-size:.9rem">Funciones</a>
-          <a href="#planes" style="color:#94a3b8;font-size:.9rem">Planes</a>
-          <a href="/docs/" style="color:#94a3b8;font-size:.9rem">Documentación</a>
-          <!-- demo-publica --><a href="https://demo.libracargo.com.ar/" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Ver la demo</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Contacto</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://wa.me/5491127752983" target="_blank" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
-          <a href="mailto:soporte@libracargo.com.ar" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-envelope me-1"></i>Email</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Familia Libra</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://contalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Contalibra — ERP &amp; Facturación</a>
-          <a href="https://libradesk.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">LibraDesk — Soporte técnico</a>
-          <a href="https://ventalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">VentaLibra — Punto de venta</a>
-          <a href="https://libraclub.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">LibraClub — Complejos deportivos</a>
-        </div>
-      </div>
-    </div>
+    <nav class="f-col" aria-label="Sistema">
+      <div class="f-title">Sistema</div>
+      <a href="#funciones">Funciones</a>
+      <a href="#planes">Planes</a>
+      <a href="#preguntas">Preguntas frecuentes</a>
+      <a href="/docs/">Documentación</a>
+      <!-- demo-publica --><a href="https://demo.libracargo.com.ar/" target="_blank" rel="noopener">Ver la demo</a>
+    </nav>
+    <nav class="f-col" aria-label="Contacto">
+      <div class="f-title">Contacto</div>
+      <a href="https://wa.me/5491127752983" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+      <a href="mailto:soporte@libracargo.com.ar"><i class="bi bi-envelope"></i>soporte@libracargo.com.ar</a>
+    </nav>
+    <nav class="f-col f-family" aria-label="LibraSuite">
+      <div class="f-title">LibraSuite</div>
+      <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite<small>Todos los sistemas de la suite</small></a>
+      <a href="https://ventalibra.com.ar" target="_blank" rel="noopener">VentaLibra<small>Punto de venta para retail</small></a>
+      <a href="https://contalibra.com.ar" target="_blank" rel="noopener">Contalibra<small>ERP y facturación</small></a>
+      <a href="https://restolibra.com.ar" target="_blank" rel="noopener">Restolibra<small>Gestión gastronómica</small></a>
+      <a href="https://gestiolibra.com.ar" target="_blank" rel="noopener">Gestiolibra<small>Turnos para servicios</small></a>
+      <a href="https://medlibra.com.ar" target="_blank" rel="noopener">MedLibra<small>Turnos para salud</small></a>
+      <a href="https://libradesk.com.ar" target="_blank" rel="noopener">LibraDesk<small>Mesa de ayuda y service IT</small></a>
+      <a href="https://libraclub.com.ar" target="_blank" rel="noopener">LibraClub<small>Reservas de canchas</small></a>
+    </nav>
   </div>
-  <div class="footer-copy">
-    © 2026 LibraCargo · parte de la familia Libra · Todos los derechos reservados
+  <div class="f-bottom">
+    <span>© 2026 LibraCargo · parte de <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite</a> · Todos los derechos reservados</span>
+    <a href="/legal/terminos.html">Términos y condiciones</a>
   </div>
 </footer>
 
