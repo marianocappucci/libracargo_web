@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre liquidación de transportistas — Documentación LibraCargo</title>
+  <meta name="description" content="Los fletes del período de cada transportista, con su comisión y el IVA según su condición.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><img src="/img/marca.svg" alt="" class="logo-icon" width="32" height="32">LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+    <a href="/legal/terminos">Términos</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/arca.html">ARCA y certificados</a>
+    <a href="/docs/correo.html">Correo saliente</a>
+    <a href="/docs/maestros.html">Maestros</a>
+    <a href="/docs/tarifario.html">Tarifario de referencia</a>
+    <div class="docs-sidebar-section">Operación</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/transporte.html">Transporte</a>
+    <a href="/docs/cartas-de-porte.html">Cartas de porte</a>
+    <a href="/docs/titulares.html">Titulares de carta de porte</a>
+    <div class="docs-sidebar-section">Facturación</div>
+    <a href="/docs/facturacion.html">Facturar pendientes y Nueva factura</a>
+    <a href="/docs/fce.html">Factura de crédito electrónica</a>
+    <a href="/docs/comprobantes.html">Comprobantes</a>
+    <a href="/docs/notas.html">Notas de crédito y de débito</a>
+    <a href="/docs/comprobantes-proveedores.html">Comprobantes de proveedores</a>
+    <div class="docs-sidebar-section">Cuentas</div>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Dashboard</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/pre-liquidacion.html" class="active">Pre liquidación de transportistas</a>
+    <a href="/docs/impresion.html">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Pre liquidación de transportistas</h1>
+<p class="docs-lead">El papel que se le manda a cada fletero antes de que facture: los fletes del período, lo que se le va a liquidar y el IVA si corresponde.</p>
+<h2>Cómo se arma</h2>
+<ol class="step-list">
+<li>Andá a <strong>Reportes → Pre liquidación de transportistas</strong>.</li>
+<li>Elegí <strong>Desde</strong> y <strong>Hasta</strong>. Son obligatorios.</li>
+<li>Si querés el de un solo transportista, elegilo en <strong>Fletero</strong>; vacío trae a todos.</li>
+<li>Usá <strong>Imprimir</strong>, <strong>Ver PDF</strong> o <strong>Descargar PDF</strong>.</li>
+</ol>
+<p>El resultado viene en <strong>un bloque por transportista</strong>, con sus fletes, un subtotal, y al final el <strong>Total general</strong>: cantidad de fletes, <strong>Comisión (neto)</strong>, <strong>IVA</strong> y <strong>Total a liquidar</strong>. Cada hoja del papel lleva la leyenda <em>Pre liquidación — no es un comprobante</em>.</p>
+<h2>Qué órdenes entran</h2>
+<p>Las mismas con las que se le asienta el flete en su cuenta corriente:</p>
+<ul>
+<li>Con <strong>fletero</strong> asignado. Una orden sin fletero no entra: no hay a quién liquidarle.</li>
+<li>Con <strong>comisión mayor que cero</strong>.</li>
+<li><strong>No anuladas</strong>.</li>
+<li>Con la <strong>fecha de la orden</strong> dentro del rango, extremos incluidos.</li>
+</ul>
+<p>Entran las <strong>pendientes y las facturadas</strong>: liquidarle al transportista no depende de que al cliente ya se le haya facturado.</p>
+<div class="callout">
+<p><strong>El valor de un flete es la comisión de la orden, no la tarifa.</strong> La tarifa es lo que se le cobra al cliente; la comisión es lo que cobra el transportista, y es el mismo importe que se le asienta en su <a href="/docs/cuenta-corriente.html">cuenta corriente</a>.</p>
+</div>
+<h2>El IVA lo decide la condición del transportista</h2>
+<p>Sólo quien discrimina IVA en su factura lo suma. Sale de la <strong>Condición de IVA</strong> de la ficha del fletero (<strong>Transporte → Fleteros</strong>), no de la orden:</p>
+<table class="docs-table">
+<thead><tr><th>Condición del fletero</th><th>IVA</th></tr></thead>
+<tbody>
+<tr><td><kbd>Responsable inscripto</kbd></td><td>Se suma: comisión por la alícuota de cada orden. Factura A, que discrimina</td></tr>
+<tr><td><kbd>Monotributo</kbd></td><td>Cero: factura C, que no discrimina</td></tr>
+<tr><td><kbd>Exento</kbd></td><td>Cero</td></tr>
+<tr><td><kbd>Consumidor final</kbd> o <kbd>No categorizado</kbd></td><td>Cero, <strong>con un aviso</strong> en el bloque del transportista</td></tr>
+</tbody>
+</table>
+<p>La alícuota es la <strong>de cada orden</strong> (una orden al 10,5 % suma 10,5 %), y el IVA se redondea <strong>flete por flete</strong>, porque la factura del transportista discrimina renglón por renglón y redondear sobre el total daría centavos distintos.</p>
+<div class="callout warn">
+<p><strong>Si un transportista sale con aviso, corregí su condición de IVA</strong> en la ficha. Un fletero cargado sin condición queda como consumidor final: sale sin IVA y con aviso, porque sumarlo por las dudas le liquidaría de más a quien no lo cobra.</p>
+</div>
+<h2>Qué no es</h2>
+<p>Es un informe <strong>de lectura</strong>: no asienta nada y no toca la cuenta corriente. No es un comprobante ni reemplaza la factura del transportista. Lo que se liquida de verdad sigue siendo lo asentado en su cuenta; para pagarle, <a href="/docs/caja.html">Caja</a>.</p>
+<div class="docs-nav-footer">
+<a href="/docs/reportes.html">← Reportes</a>
+<a href="/docs/impresion.html">Impresión de listados →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprobantes de proveedores — Documentación LibraCargo</title>
+  <meta name="description" content="Lo que un proveedor entrega y se le descuenta a un fletero, con sus dos asientos.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><img src="/img/marca.svg" alt="" class="logo-icon" width="32" height="32">LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+    <a href="/legal/terminos">Términos</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/arca.html">ARCA y certificados</a>
+    <a href="/docs/correo.html">Correo saliente</a>
+    <a href="/docs/maestros.html">Maestros</a>
+    <a href="/docs/tarifario.html">Tarifario de referencia</a>
+    <div class="docs-sidebar-section">Operación</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/transporte.html">Transporte</a>
+    <a href="/docs/cartas-de-porte.html">Cartas de porte</a>
+    <a href="/docs/titulares.html">Titulares de carta de porte</a>
+    <div class="docs-sidebar-section">Facturación</div>
+    <a href="/docs/facturacion.html">Facturar pendientes y Nueva factura</a>
+    <a href="/docs/fce.html">Factura de crédito electrónica</a>
+    <a href="/docs/comprobantes.html">Comprobantes</a>
+    <a href="/docs/notas.html">Notas de crédito y de débito</a>
+    <a href="/docs/comprobantes-proveedores.html" class="active">Comprobantes de proveedores</a>
+    <div class="docs-sidebar-section">Cuentas</div>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Dashboard</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/pre-liquidacion.html">Pre liquidación de transportistas</a>
+    <a href="/docs/impresion.html">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Comprobantes de proveedores</h1>
+<p class="docs-lead">Lo que un proveedor entrega y se le descuenta a un fletero: combustible, repuestos, adelantos.</p>
+<h2>Qué es y qué no es</h2>
+<p>Andá a <strong>Comprobantes → Proveedores</strong>. Es la otra pestaña de la entrada <strong>Comprobantes</strong>.</p>
+<p>Un comprobante de proveedor registra <strong>un gasto imputado a un fletero</strong>: el proveedor entregó algo y esa plata se le descuenta al fletero de lo que la agencia le debe. <strong>No es una factura de compra</strong>: no lleva letra, punto de venta ni IVA discriminado, y no es un documento fiscal.</p>
+<h2>Cargar uno</h2>
+<ol class="step-list">
+<li>Tocá <strong>Nuevo comprobante</strong>.</li>
+<li>Completá la <strong>Fecha</strong>, el <strong>Proveedor</strong> y <strong>Se le descuenta a</strong> (el fletero).</li>
+<li>Escribí el <strong>Remito o comprobante</strong> si lo tenés (es opcional), el <strong>Detalle</strong> y el <strong>Importe</strong>.</li>
+<li>Tocá <strong>Guardar</strong>.</li>
+</ol>
+<div class="callout">
+<p><strong>Un gasto mueve dos cuentas, y la pantalla lo dice antes de guardar:</strong> <em>suma</em> al saldo del proveedor —lo que se le debe— y <em>descuenta</em> del saldo del fletero. Los dos asientos entran juntos, en la misma operación.</p>
+</div>
+<p>El fletero es obligatorio: un gasto que no se le descuenta a nadie es un gasto general de la agencia, y eso va por <a href="/docs/caja.html">Caja</a> sin tercero.</p>
+<h2>Buscar, editar y anular</h2>
+<ul>
+<li>Filtrá por <strong>Desde</strong>, <strong>Hasta</strong>, <strong>Proveedor</strong> y <strong>Fletero</strong>. Un clic en la fila abre la cuenta corriente del proveedor.</li>
+<li><strong>Editar</strong> (el lápiz) corrige el gasto y sus dos asientos en el lugar: una línea por cuenta.</li>
+<li><strong>Anular</strong> no borra: deja las dos líneas y agrega sus dos contrapartidas, con la fecha del gasto. El comprobante queda marcado <kbd>anulado</kbd>.</li>
+</ul>
+<p>El listado en papel sale de <a href="/docs/reportes.html">Reportes</a> (<strong>Listado de comprobantes de proveedores</strong>). Los pagos al proveedor se registran en <a href="/docs/caja.html">Caja</a>.</p>
+<div class="docs-nav-footer">
+<a href="/docs/notas.html">← Notas de crédito y de débito</a>
+<a href="/docs/cuenta-corriente.html">Cuenta corriente →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>
