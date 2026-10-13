@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correo saliente — Documentación LibraCargo</title>
+  <meta name="description" content="El servidor de correo para enviar comprobantes y recuperar contraseñas, con el tutorial de Gmail.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><img src="/img/marca.svg" alt="" class="logo-icon" width="32" height="32">LibraCargo</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+    <a href="/legal/terminos">Términos</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/empresa.html">Datos de la empresa</a>
+    <a href="/docs/arca.html">ARCA y certificados</a>
+    <a href="/docs/correo.html" class="active">Correo saliente</a>
+    <a href="/docs/maestros.html">Maestros</a>
+    <a href="/docs/tarifario.html">Tarifario de referencia</a>
+    <div class="docs-sidebar-section">Operación</div>
+    <a href="/docs/ordenes.html">Órdenes de carga</a>
+    <a href="/docs/transporte.html">Transporte</a>
+    <a href="/docs/cartas-de-porte.html">Cartas de porte</a>
+    <a href="/docs/titulares.html">Titulares de carta de porte</a>
+    <div class="docs-sidebar-section">Facturación</div>
+    <a href="/docs/facturacion.html">Facturar pendientes y Nueva factura</a>
+    <a href="/docs/fce.html">Factura de crédito electrónica</a>
+    <a href="/docs/comprobantes.html">Comprobantes</a>
+    <a href="/docs/notas.html">Notas de crédito y de débito</a>
+    <a href="/docs/comprobantes-proveedores.html">Comprobantes de proveedores</a>
+    <div class="docs-sidebar-section">Cuentas</div>
+    <a href="/docs/cuenta-corriente.html">Cuenta corriente</a>
+    <a href="/docs/caja.html">Caja</a>
+    <div class="docs-sidebar-section">Gestión</div>
+    <a href="/docs/tablero.html">Dashboard</a>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/pre-liquidacion.html">Pre liquidación de transportistas</a>
+    <a href="/docs/impresion.html">Impresión de listados</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Correo saliente</h1>
+<p class="docs-lead">El servidor de correo con el que LibraCargo manda los comprobantes y los enlaces para recuperar la contraseña.</p>
+<h2>Para qué hace falta</h2>
+<p>Sin correo configurado, dos cosas fallan:</p>
+<ul>
+<li><strong>Enviar por correo</strong> un comprobante, desde el <a href="/docs/comprobantes.html">detalle del comprobante</a>.</li>
+<li><strong>¿Olvidaste tu contraseña?</strong> en la pantalla de ingreso: el enlace para elegir una nueva se manda por correo.</li>
+</ul>
+<h2>Configurarlo</h2>
+<ol class="step-list">
+<li>Andá a <strong>Configuración → Integraciones → Email / SMTP</strong> (sólo administradores).</li>
+<li>Completá <strong>Servidor</strong>, <strong>Puerto</strong>, <strong>Usuario</strong> y <strong>Contraseña</strong>.</li>
+<li>Escribí el <strong>Remitente</strong> (si lo dejás vacío se usa el usuario; la mayoría de los proveedores exige que coincidan) y, si querés, el <strong>Nombre del remitente</strong>.</li>
+<li>Tocá <strong>Guardar</strong>.</li>
+<li>Tocá <strong>Probar conexión</strong>: dice a qué servidor se conectó y con qué usuario, o por qué no pudo.</li>
+</ol>
+<p>El cuadro de arriba del formulario muestra el <strong>Estado</strong>: si está configurado, o si todavía se están usando las variables del servidor. La contraseña se guarda cifrada y no vuelve a mostrarse; para cambiarla, escribí una nueva. <strong>Borrar y usar la del servidor</strong> descarta lo guardado acá.</p>
+<h2>Con Gmail</h2>
+<div class="callout warn">
+<p><strong>Gmail no acepta tu contraseña normal</strong> para enviar desde una aplicación externa: necesitás una <strong>contraseña de aplicación</strong>.</p>
+</div>
+<ol class="step-list">
+<li>En tu cuenta de Google, andá a <strong>Seguridad</strong> y verificá que esté activada la <strong>Verificación en dos pasos</strong>.</li>
+<li>Entrá a las <em>contraseñas de aplicación</em> (<code>myaccount.google.com/apppasswords</code>).</li>
+<li>Escribí <em>LibraCargo</em> como nombre de la app y tocá <strong>Crear</strong>.</li>
+<li>Copiá la contraseña de 16 caracteres: no se vuelve a mostrar.</li>
+<li>Pegala en el campo <strong>Contraseña</strong> del formulario. Los valores para Gmail son servidor <code>smtp.gmail.com</code>, puerto <code>587</code> y como usuario tu dirección completa.</li>
+</ol>
+<p>La pantalla incluye este mismo tutorial arriba del formulario.</p>
+<div class="docs-nav-footer">
+<a href="/docs/arca.html">← ARCA y certificados</a>
+<a href="/docs/maestros.html">Maestros →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraCargo · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>
